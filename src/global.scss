@@ -1,0 +1,81 @@
+@import '@carbon/themes/scss/themes';
+$carbon--theme: $carbon--theme--g100;
+@include carbon--theme();
+
+@import 'carbon-components/scss/globals/scss/styles.scss';
+@import url("https://fonts.googleapis.com/css?family=Roboto"); /* Using a url */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"); /* Using a url */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #283e4a; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+/* W3.CSS 4.10 February 2018 by Jan Egil and Borge Refsnes */
+ html{
+    box-sizing:border-box
+}
+*,*:before,*:after{
+    box-sizing:inherit
+}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+ html{
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #283e4a;
+    box-sizing: border-box;
+}
+a {
+    color: $text-04;
+  }
+  
+  .bx--side-nav__navigation {
+    background-color: $ui-background;
+  }
+  
+  a.bx--side-nav__link--current,
+  a.bx--side-nav__link--current > span.bx--side-nav__link-text {
+    background-color: $ui-01;
+    color: $text-04;
+  }
+  
+  .bx--side-nav__item:not(.bx--side-nav__item--active)
+    > .bx--side-nav__link:hover {
+    background-color: $ui-01;
+    color: $text-04;
+  }
+  
+  a.bx--side-nav__link > .bx--side-nav__link-text,
+  .bx--side-nav__item:not(.bx--side-nav__item--active)
+    > .bx--side-nav__link:hover
+    > span {
+    color: $text-04;
+  }
+  
+  .bx--side-nav:hover .bx--side-nav__item, .bx--side-nav--fixed .bx--side-nav__item, .bx--side-nav--expanded .bx--side-nav__item {
+    padding: 8px 0px !important;
+  }
+  
+  @media (max-width: 640px) {
+    h1, h2, h3, h4, h5, h6 {
+      text-align: center;
+    }
+  }
